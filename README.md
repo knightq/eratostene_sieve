@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/knightq/eratostene_sieve.png?branch=master)](https://travis-ci.org/knightq/eratostene_sieve)
+[![Dependency Status](https://gemnasium.com/knightq/eratostene_sieve.png)](https://gemnasium.com/knightq/eratostene_sieve)
+
 # EratosteneSieve
 
 This gem provides you a set of minimal utilities function to manage prime numbers.
