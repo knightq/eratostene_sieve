@@ -1,9 +1,4 @@
-[![Build Status](https://travis-ci.org/knightq/eratostene_sieve.png?branch=master)](https://travis-ci.org/knightq/eratostene_sieve)
-[![Dependency Status](https://gemnasium.com/knightq/eratostene_sieve.png)](https://gemnasium.com/knightq/eratostene_sieve)
-[![Coverage Status](https://coveralls.io/repos/knightq/eratostene_sieve/badge.png)](https://coveralls.io/r/knightq/eratostene_sieve)
-[![GitHub version](https://badge.fury.io/gh/knightq%2Feratostene_sieve.png)](http://badge.fury.io/gh/knightq%2Feratostene_sieve)
-
-# EratosteneSieve
+# EratosteneSieve [![Build Status](https://travis-ci.org/knightq/eratostene_sieve.png?branch=master)](https://travis-ci.org/knightq/eratostene_sieve) [![Dependency Status](https://gemnasium.com/knightq/eratostene_sieve.png)](https://gemnasium.com/knightq/eratostene_sieve) [![Coverage Status](https://coveralls.io/repos/knightq/eratostene_sieve/badge.png)](https://coveralls.io/r/knightq/eratostene_sieve) [![GitHub version](https://badge.fury.io/gh/knightq%2Feratostene_sieve.png)](http://badge.fury.io/gh/knightq%2Feratostene_sieve)
 
 This gem provides you a set of minimal utility functions to manage prime numbers.
 
