@@ -9,7 +9,7 @@ module EratosteneSieve
 
   def self.nth_prime(index)
     return first_primes[index] if index < first_primes.size
-    counter = first_primes.size
+    counter = first_primes.size - 1
     ((first_primes.last + 2)..Inf).step(2) do |candidate|
       (2..((candidate**0.5).to_i)).each do |m|
         break if candidate % m == 0

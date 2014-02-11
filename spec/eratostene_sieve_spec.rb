@@ -9,8 +9,10 @@ describe EratosteneSieve do
       EratosteneSieve.nth_prime(3).should be_eql(5)
       EratosteneSieve.nth_prime(4).should be_eql(7)
       EratosteneSieve.nth_prime(10).should be_eql(29)
-      EratosteneSieve.nth_prime(20).should be_eql(67)
-      EratosteneSieve.nth_prime(30).should be_eql(109)
+      EratosteneSieve.nth_prime(20).should be_eql(71)
+      EratosteneSieve.nth_prime(30).should be_eql(113)
+      EratosteneSieve.nth_prime(100).should be_eql(541)
+      EratosteneSieve.nth_prime(200).should be_eql(1223)
     end
   end
 
