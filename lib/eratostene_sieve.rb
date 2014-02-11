@@ -3,7 +3,7 @@ require 'eratostene_sieve/railtie' if defined? Rails
 
 # Utility to get:
 # - nth_prime(n): the nth prime number.
-# - prime_serie: an enumerator on prime number serie.
+# - enumerator: an enumerator on prime number serie.
 module EratosteneSieve
   Inf = 1.0 / 0.0
 
@@ -19,11 +19,11 @@ module EratosteneSieve
     end
   end
 
-  def self.prime_serie
+  def self.enumerator
     Enumerator.new do |y|
-      a = 1
-      b = 2
-      index = 2
+      a = 2
+      b = 3
+      index = 3
       loop do
         y << a
         a, b = b, nth_prime(index)
@@ -35,6 +35,6 @@ module EratosteneSieve
   private
 
   def self.first_primes
-    @first_primes ||= [1, 2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
+    @first_primes ||= [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31]
   end
 end

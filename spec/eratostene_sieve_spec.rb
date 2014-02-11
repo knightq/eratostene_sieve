@@ -16,12 +16,12 @@ describe EratosteneSieve do
     end
   end
 
-  describe '.prime_serie' do
+  describe '.enumerator' do
     it 'should return ' do
-      enumerator = EratosteneSieve.prime_serie
+      enumerator = EratosteneSieve.enumerator
       serie = []
       (0..9).each { |i| serie << enumerator.next }
-      serie.should == [1, 2, 3, 5, 7, 11, 13, 17, 19, 23]
+      serie.should == [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
     end
   end
 end
