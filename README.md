@@ -4,7 +4,14 @@ This gem provides you a set of minimal utility functions to manage prime numbers
 
 ## Changelog
 
-  - **1.0.0**: initial release. It provides just these class functions:
+  - **0.0.3**:
+
+    - Renames .prime_serie into .enumerator.
+    - Adds .serie class method.
+
+  - **0.0.2**: Fix .prime_serie.
+
+  - **0.0.1**: initial release. It provides just these class functions:
 
     - `nth_prime(n)` : retun the nth prime number.
     - `enumerator`  : return an enumerator over the prime serie.
@@ -38,6 +45,10 @@ Or install it yourself as:
     enumerator = EratosteneSieve.enumerator
     serie = []
     (0..9).each { |i| serie << enumerator.next }
+    puts serie # => [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
+
+    # serie example
+    serie = EratosteneSieve.serie(:from => 1, :up_to => 10)
     puts serie # => [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
 
 ## Contributing

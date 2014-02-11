@@ -32,6 +32,21 @@ module EratosteneSieve
     end
   end
 
+  def self.serie(options = {})
+    from = options[:from] || 1
+    up_to = options[:up_to] || 10
+    fail "from option must be an integer, given #{from}." unless from.is_a?(Integer)
+    fail "up_to option must be an integer, given #{up_to}." unless up_to.is_a?(Integer)
+    fail "from option must be > 0, given #{from}." if from < 1
+    serie = []
+    enumerator = EratosteneSieve.enumerator
+    lowest_index = from < up_to ? from : up_to
+    (lowest_index - 1).times { enumerator.next }
+    ((from - up_to).abs + 1).times { serie << enumerator.next }
+    serie.reverse! if from > up_to
+    serie
+  end
+
   private
 
   def self.first_primes
